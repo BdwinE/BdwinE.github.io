@@ -34,8 +34,8 @@
 
 .button-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #71A882;
+    border-color: #71A882;
 }
 
 .button-lg, .fcf-btn-group-lg>.fcf-btn {
@@ -238,6 +238,9 @@ div .twoButtonGrid{
     color: whitesmoke;
 
 }
+.buttonHover:hover{
+    background-color: rgba(133, 188, 150, 1);
+}
 .progLangs{
     display: grid;
     align-items: center;
@@ -255,6 +258,9 @@ div .twoButtonGrid{
 
 #asDeg{
     padding-top: 0%;
+}
+#topPadding{
+    padding-top: 5%;
 }
 .progLang p{
     text-align: center;
@@ -330,8 +336,8 @@ button {
 }
 #dwnlButton{
     color: black;
-    margin-top: 0px;
-    margin-right: 240px;
+    margin-top: 0%;
+    margin-right: 0%;
     font-family: 'IBM Plex Mono',serif;
     padding-left: 7px;
     padding-right: 7px;
@@ -340,6 +346,9 @@ button {
     background-color: #71A882;
     border-radius: 25%;
     transform: scale(0.7);
+}
+.dwnlButtonHover:hover #dwnlButton{
+    background-color: rgba(133, 188, 150, 1);
 }
 #dwnlButton img{
     max-width: 20px;
@@ -354,8 +363,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    padding-bottom: 5%;/*10px;*/
+    margin-bottom: 10%;/*10px;*/
     border-bottom: 2px solid #71a882;
 }
 .contactBlck p{
@@ -440,6 +449,9 @@ progress[value]::-webkit-progress-value {
   .workContainer h3{
       margin-bottom: 25px;
   }
+  .workContainer a{
+    color: rgb(151, 207, 169);
+  }
   .threeColGrid{
       display: grid;
       grid-template-columns: 0.9fr 1.6fr 0.5fr;
@@ -447,7 +459,7 @@ progress[value]::-webkit-progress-value {
       align-items: center;
   }
   .threeColGrid p{
-      text-align: justify;
+      /*text-align: justify;*/
   }
   .projectLinks{
       display: flex;
