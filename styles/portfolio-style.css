@@ -165,6 +165,31 @@ body .PageWrapper{
     top: 5px;
     padding: 2vw 3vw 0vw 3vw;
 }
+@media only screen and (max-width: 768px) {
+    .PageWrapper .LeftBlock{
+        display: none;
+    }
+    .PageWrapper .textVertical{
+        transform: rotateZ(-90deg);
+        width: 100vh;
+        font-size: 64px;
+        color: #d9dbd0;
+        font-family: 'Playfair Display',serif;
+        font-weight: 700;
+        padding-left: 40px;   
+    }
+    .PageWrapper .Content{
+        width:70%;
+        padding: 0vw 4vw 0vw 4vw;
+    }
+    .PageWrapper .Sidebar{
+        width:30%;
+        height: 100%;
+        position: sticky;
+        top: 5px;
+        padding: 2vw 3vw 0vw 3vw;
+    }
+}
 .UpperSection{
     padding-bottom: 40px;
     padding-top: 49px;
@@ -334,6 +359,10 @@ button {
     height: 56px;
     z-index: 5;
 }
+#dwnlResumeButton img{
+    max-width: 20px;
+    color: whitesmoke;
+}
 #dwnlButton{
     color: black;
     margin-top: 0%;
@@ -368,9 +397,8 @@ button {
     border-bottom: 2px solid #71a882;
 }
 .contactBlck p{
-    height: 15px;
+    text-decoration: currentcolor;
     font-size: 13px;
-    margin-bottom: 5px;
 }
 .contactBlck a{
     text-decoration: currentcolor;
