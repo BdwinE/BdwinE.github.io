@@ -154,11 +154,11 @@ body .PageWrapper{
     font-weight: 700;
     padding-left: 40px;   
 }
-.PageWrapper .Content{
+.PageWrapper .Content, .PageWrapper .HomeContent{
     width:60%;
     padding: 0vw 4vw 0vw 4vw;
 }
-.PageWrapper .Sidebar{
+.PageWrapper .Sidebar, .PageWrapper .HomeSideBar{
     width:30%;
     height: 100%;
     position: sticky;
@@ -167,27 +167,19 @@ body .PageWrapper{
 }
 @media only screen and (max-width: 768px) {
     .PageWrapper .LeftBlock{
-        display: none;
-    }
-    .PageWrapper .textVertical{
-        transform: rotateZ(-90deg);
-        width: 100vh;
-        font-size: 64px;
-        color: #d9dbd0;
-        font-family: 'Playfair Display',serif;
-        font-weight: 700;
-        padding-left: 40px;   
+        display: none; /*remove the leftblock if the screen is less than 769px wide*/
     }
     .PageWrapper .Content{
+        width:100%;
+        padding: 0vw 4vw 0vw 4vw;
+        justify-content: center;
+    }
+    .PageWrapper .HomeContent{
         width:70%;
         padding: 0vw 4vw 0vw 4vw;
     }
     .PageWrapper .Sidebar{
-        width:30%;
-        height: 100%;
-        position: sticky;
-        top: 5px;
-        padding: 2vw 3vw 0vw 3vw;
+        display: none; /*remove the sidebar if the screen is less than 769px wide*/
     }
 }
 .UpperSection{
@@ -382,7 +374,7 @@ button {
 #dwnlButton img{
     max-width: 20px;
 }
-.Sidebar .Info{
+.Sidebar .Info, .HomeSideBar .Info{
     margin-top: 50px;
     width: 100%;
 }
@@ -486,9 +478,9 @@ progress[value]::-webkit-progress-value {
       column-gap: 25px;
       align-items: center;
   }
-  .threeColGrid p{
-      /*text-align: justify;*/
-  }
+  /*.threeColGrid p{
+      text-align: justify;
+  }*/
   .projectLinks{
       display: flex;
       flex-direction: row;
