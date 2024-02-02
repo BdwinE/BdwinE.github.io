@@ -478,6 +478,10 @@ progress[value]::-webkit-progress-value {
       column-gap: 25px;
       align-items: center;
   }
+  .twoColGrid{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+  }
   /*.threeColGrid p{
       text-align: justify;
   }*/
