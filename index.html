@@ -1,125 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/portfolio-style.css">
-        <title>
-        Edwin's Portfolio - Home  
-        </title>
-        <link rel="icon" href="images/businessman.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="View Edwin's portfolio" />
-        <meta property="og:image" content="images/PFP.png" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
-    </head>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio-style.css" />
+    <title>Edwin's Portfolio - Home</title>
+    <link rel="icon" href="images/businessman.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="View Edwin's portfolio" />
+    <meta property="og:image" content="images/PFP.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-    <body>
-        <nav>
-            <div class = "menuButton">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+  <body>
+    <nav>
+      <div class="menuButton">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="menu">
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"
+        ></script>
+        <a href="index.html">Home</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/works.html">Works</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="PageWrapper">
+      <!--################### LEFT BLCK ####################-->
+      <div class="LeftBlock">
+        <p class="textVertical">Edwin A .</p>
+      </div>
+      <!--################### CONTENT BLCK ####################-->
+      <div class="HomeContent">
+        <section class="UpperSection">
+          <div class="HeroIntro">
+            <h1>
+              Hi, My name is Edwin. A CompSci graduate with a minor in Math,
+              currently based in Denver, CO.
+            </h1>
+            <p>
+              Having undergone the core courses in the field of computer science
+              and a little over 2 years in the field, I have a good knowledge of
+              algorithms, data structures, Operating Systems, Prob & Stats, etc.
+              Check out my Portfolio and works page for more about my
+              background.
+            </p>
+            <div class="twoButtonGrid">
+              <button
+                class="buttonHover"
+                onclick="document.location='pages/portfolio.html'"
+              >
+                VIEW PORTFOLIO
+              </button>
+              <form
+                method="get"
+                action="resume/Emeka_Asoluka_Resume.pdf"
+                target="_blank"
+              >
+                <button type="submit" class="buttonHover" id="dwnlResumeButton">
+                  DOWNLOAD RESUME <img src="images/dwnl_icon.svg" />
+                </button>
+              </form>
             </div>
-            <div class="menu"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-                <a href="index.html">Home</a>
-                <a href="pages/portfolio.html">Portfolio</a>
-                <a href="pages/works.html">Works</a>
-                <a href="pages/contact.html">Contact</a>
-            </div>
-        </nav>
-        <div class="PageWrapper">
-            <!--################### LEFT BLCK ####################-->
-            <div class="LeftBlock">
-                <p class="textVertical"> Edwin A .</p>
-            </div>
-            <!--################### CONTENT BLCK ####################-->
-            <div class = "HomeContent" >
-                <section class = "UpperSection">
-                    <div class="HeroIntro">
-                        <h1>
-                            Hi, My name is Edwin. A CompSci graduate
-                            with a minor in Math, currently based in Denver, CO.
-                        </h1>
-                        <p>
-                            Having undergone the core courses in the field of computer science and a little over 2 years in the field,
-                            I have a good knowledge of algorithms, data structures, Operating Systems, Prob & Stats, etc.
-                            Check out my Portfolio and works page for more about my background.
-                        </p>
-                        <div class = "twoButtonGrid">
-                            <button class=buttonHover onclick="document.location='pages/portfolio.html'">VIEW PORTFOLIO</button>
-                            <form  method="get" action="resume/Emeka_Asoluka_Resume_02_02_2024.docx">
-                                <button type="submit" class=buttonHover id="dwnlResumeButton">DOWNLOAD RESUME <img src="images/dwnl_icon.svg"></button>
-                            </form>
-                        </div>
-                    </div>
-                                      
-                </section> <!-- end Upper section-->
+          </div>
+        </section>
+        <!-- end Upper section-->
 
-                <section data-aos="fade-left">
-                    <div class="SectionTop">
-                        <h2 class= "sectionTop Heading">About Me</h2>
-                        <div class="aboutGrid">
-                            <div class="Info Block" data-aos="fade-right">
-                                <p class="textGrey">
-                                    I've always been intregred in computers and technology. Choosing to pursue that intrest I  went to Metropolitan State University
-                                    to aquire a degree in Computer Science. Graduated 2021 and been enjoying my time in the field since.
-                                    I desire to learn more and truely make innovations in the field of computer science and technology.
-                                    I enjoy solving problems and learning new things. Please don't hesitate to <a href="pages/contact.html">contact me</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-
-                <section data-aos="fade-right">
-                    <div class="twoButtonGrid">
-                        <button class=buttonHover onclick="document.location='pages/works.html'">Projects</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="footer">
-                        <div class="links">
-                            <a href="index.html">Home</a>
-                            <a href="pages/portfolio.html">Portfolio</a>
-                            <a href="pages/works.html">Works</a>
-                            <a href="pages/contact.html">Contact</a>
-                        </div>
-                        <p>Created by Edwin Asoluka. Icons from @flaticons</p>
-                    </div> <!--end footer-->
-                </section>
-            </div> <!-- end content-->
-            <!--################### RIGHT BLCK ####################-->
-            <div class="HomeSideBar">
-                <img class="profImg" id="homepagepfp" src="images/PFP.png">
-                <div class="HomeSideBar Info">
-                    <div class="contactBlck">
-                        <p>Email:</p>
-                        <a href="mailto:asolukaedwin@gmail.com">asoluka<br>edwin@<br>gmail.com</a>
-                    </div>
-                    <br>
-                    <div class="contactBlck">
-                        <p>Mobile:</p>
-                        <p>+1-720-434-9998</p>
-                    </div>
-                    <br>
-                    <div class="contactBlck">
-                        <p>LinkedIn:</p>
-                        <a href="https://www.linkedin.com/in/emeka-asoluka-65480b15b/" target="_blank">
-                            Edwin Asoluka
-                        </a>
-                    </div>
-                </div>
+        <section data-aos="fade-left">
+          <div class="SectionTop">
+            <h2 class="sectionTop Heading">About Me</h2>
+            <div class="aboutGrid">
+              <div class="Info Block" data-aos="fade-right">
+                <p class="textGrey">
+                  I've always been intregred in computers and technology.
+                  Choosing to pursue that intrest I went to Metropolitan State
+                  University to aquire a degree in Computer Science. Graduated
+                  2021 and been enjoying my time in the field since. I desire to
+                  learn more and truely make innovations in the field of
+                  computer science and technology. I enjoy solving problems and
+                  learning new things. Please don't hesitate to
+                  <a href="pages/contact.html">contact me</a>.
+                </p>
+              </div>
             </div>
-        </div> <!-- end pageWrapper-->
-        
-        <script src="scripts/menu-button.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+          </div>
+        </section>
+
+        <section data-aos="fade-right">
+          <div class="twoButtonGrid">
+            <button
+              class="buttonHover"
+              onclick="document.location='pages/works.html'"
+            >
+              Projects
+            </button>
+          </div>
+        </section>
+        <section>
+          <div class="footer">
+            <div class="links">
+              <a href="index.html">Home</a>
+              <a href="pages/portfolio.html">Portfolio</a>
+              <a href="pages/works.html">Works</a>
+              <a href="pages/contact.html">Contact</a>
+            </div>
+            <p>Created by Edwin Asoluka. Icons from @flaticons</p>
+          </div>
+          <!--end footer-->
+        </section>
+      </div>
+      <!-- end content-->
+      <!--################### RIGHT BLCK ####################-->
+      <div class="HomeSideBar">
+        <img class="profImg" id="homepagepfp" src="images/PFP.png" />
+        <div class="HomeSideBar Info">
+          <div class="contactBlck">
+            <p>Email:</p>
+            <a href="mailto:edwinasoluka@gmail.com"
+              >edwin<br />asoluka@<br />gmail.com</a
+            >
+          </div>
+          <br />
+          <div class="contactBlck">
+            <p>Mobile:</p>
+            <p>+1-720-434-9998</p>
+          </div>
+          <br />
+          <div class="contactBlck">
+            <p>LinkedIn:</p>
+            <a
+              href="https://www.linkedin.com/in/emeka-asoluka-65480b15b/"
+              target="_blank"
+            >
+              Edwin Asoluka
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pageWrapper-->
+
+    <script src="scripts/menu-button.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
